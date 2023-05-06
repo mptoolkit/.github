@@ -1,10 +1,11 @@
 ## Matrix Product Toolkit
 
-This is the code repository for the Matrix Product Toolkit
+This is the code repository for the Matrix Product Toolkit.
+
+The public code repository is at https://github.com/mptoolkit/mptoolkit
+Documentation is at https://people.smp.uq.edu.au/IanMcCulloch/mptoolkit/index.php?n=Main.HomePage
 
 The toolkit is a software suite of tools for creating and manipulating Matrix Product States, which is a form of Tensor Network.
-
-
 
 Tensor Networks provide a theoretical framework that captures the important properties of quantum systems (such as entanglement) in a way that also allows use of algebraic properties such as geometric and internal symmetries. The result is a framework for computational methods that combines powerful algebraic methods with efficient numerical techniques that can make good use of modern computational architectures (such as GPU devices) to give tools for modelling many-body quantum systems at a microscopic level. These tools have many applications, from fundamental physics such as the classification of topological states of matter, to applications in real materials and devices such as ultra-cold atomic gases and quantum-engineered devices.
 
@@ -17,7 +18,5 @@ In 2003/2004 there were a lot of developments connecting DMRG and Matrix Product
 Since then the toolkit has grown to around 100,000 lines of C++. It is currently split into two versions, the ‘old’ toolkit for finite-size calculations (accessed via svn), and a ‘new’ version, which started out as a branch for infinite-DMRG, but ultimately there were enough changes to the underlying code that merging the two branches was impractical. Instead, individual tools from the ‘old’ toolkit are getting ported to the new version as the need arises. The aim is to combine, in a single toolkit, finite, infinite and IBC[2] tools, with as much code reuse as possible.
 
 The toolkit has been used in over 100 research papers since its development. It isn’t formally described in a research publication as such, however a simple acknowledgement and citation of this Toolkit website (and, when it appears, the Toolkit publication) is sufficient.
-
-Ian McCulloch
 
 [1] http://iopscience.iop.org/article/10.1209/epl/i2002-00393-0
