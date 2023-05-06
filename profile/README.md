@@ -16,8 +16,12 @@ The Matrix Product Toolkit is a project which started life around 2002, original
 
 In 2003/2004 there were a lot of developments connecting DMRG and Matrix Product States, many of which were discussed at the workshop “Recent Progress and Prospects in DMRG”, held in Leiden in 2004. Especially with the advent of TEBD / t-DMRG it made sense to construct a software toolkit using the MPS representation, and covering a wide range of tools (groundstates, real-time evolution, frequency space methods, etc). Around this time, I realized that the ‘generic’ way to construct a Hamiltonian that I was working on for DMRG was exactly the form of a Matrix Product Operator, and thus the Matrix Product Toolkit was born.
 
-Since then the toolkit has grown to around 100,000 lines of C++. It is currently split into two versions, the ‘old’ toolkit for finite-size calculations (accessed via svn), and a ‘new’ version, which started out as a branch for infinite-DMRG, but ultimately there were enough changes to the underlying code that merging the two branches was impractical. Instead, individual tools from the ‘old’ toolkit are getting ported to the new version as the need arises. The aim is to combine, in a single toolkit, finite, infinite and IBC[2] tools, with as much code reuse as possible.
+Since then the toolkit has grown to around 100,000 lines of C++. It is currently split into two versions, the ‘old’ toolkit for finite-size calculations (accessed via svn), and a ‘new’ version, which started out as a branch for infinite-DMRG, but ultimately there were enough changes to the underlying code that merging the two branches was impractical. Instead, individual tools from the ‘old’ toolkit are getting ported to the new version as the need arises. The aim is to combine, in a single toolkit, finite, infinite[2], IBC[2], Excitation Ansatz[3] tools, with as much code reuse as possible.
 
 The toolkit has been used in over 100 research papers since its development. It isn’t formally described in a research publication as such, however a simple acknowledgement and citation of this Toolkit website (and, when it appears, the Toolkit publication) is sufficient.
 
-[1] http://iopscience.iop.org/article/10.1209/epl/i2002-00393-0
+[1] https://doi.org/10.1209/epl/i2002-00393-0
+
+[2] https://doi.org/10.1103/PhysRevB.86.245107
+
+[3] https://doi.org/10.1103/PhysRevB.85.100408
