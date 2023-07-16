@@ -10,7 +10,7 @@ The toolkit is a software suite of tools for creating and manipulating Matrix Pr
 
 Tensor Networks provide a theoretical framework that captures the important properties of quantum systems (such as entanglement) in a way that also allows use of algebraic properties such as geometric and internal symmetries. The result is a framework for computational methods that combines powerful algebraic methods with efficient numerical techniques that can make good use of modern computational architectures (such as GPU devices) to give tools for modelling many-body quantum systems at a microscopic level. These tools have many applications, from fundamental physics such as the classification of topological states of matter, to applications in real materials and devices such as ultra-cold atomic gases and quantum-engineered devices.
 
-In one-dimension, tensor networks have a quite long history, via the density-matrix renormalization-group (DMRG) algorithm developed by Steven R White in 1992. While the method was originally formulated slightly differently, it quickly became apparent that DMRG is built around a one-dimensional tensor network, which is known as a Matrix Product State (MPS).
+In one-dimension, tensor networks have a quite long history, via the density-matrix renormalization-group (DMRG) algorithm developed by Steven R White in 1992. While the method was originally formulated slightly differently, it quickly* became apparent that DMRG is built around a one-dimensional tensor network, which is known as a Matrix Product State (MPS).
 
 The Matrix Product Toolkit is a project which started life around 2002, originally envisaged as a ‘next generation’ DMRG code, incorporating non-abelian symmetries[1] and with an emphasis on a flexible and generic way to construct Hamiltonian operators and measure observables.
 
@@ -29,3 +29,5 @@ The toolkit has been used in over 100 research papers since its development. It 
 [4] *Infinite boundary conditions for matrix product state calculations*, Ho N. Phien, Guifre Vidal, Ian P. McCulloch, Phys. Rev. B 86, 245107 (2012)  https://doi.org/10.1103/PhysRevB.86.245107
 
 [5] *Variational matrix product ansatz for dispersion relations*, Jutho Haegeman, Bogdan Pirvu, David J. Weir, J. Ignacio Cirac, Tobias J. Osborne, Henri Verschelde, and Frank Verstraete, Phys. Rev. B 85, 100408(R) (2012), https://doi.org/10.1103/PhysRevB.85.100408
+
+[*] Actually, although a key publication came quite early, with "Thermodynamic Limit of Density Matrix Renormalization", Stellan Östlund and Stefan Rommer, Phys. Rev. Lett. 75, 3537, it took several more years for these ideas to develop. In practice, the correspondence between DMRG and MPS is less clear in the sense that the programming structures of the methods are somewhat different, and have different trade-offs in terms of computational efficiency.
