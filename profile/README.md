@@ -4,7 +4,7 @@ This is the code repository for the Matrix Product Toolkit.
 
 The public code repository is at https://github.com/mptoolkit/mptoolkit
 
-Documentation is at https://people.smp.uq.edu.au/IanMcCulloch/mptoolkit/index.php?n=Main.HomePage
+Documentation is at https://mptoolkit.qusim.net/
 
 The toolkit is a software suite of tools for creating and manipulating Matrix Product States, which is a form of Tensor Network.
 
